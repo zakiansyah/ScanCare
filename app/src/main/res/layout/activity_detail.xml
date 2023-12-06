@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DetailActivity">
+    tools:context=".ui.detail.DetailActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/tvIngredientName"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppinsblack"
@@ -43,7 +43,6 @@
         android:text="@string/ingredient_name"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fabBack" />
 
@@ -74,14 +73,14 @@
 
     <TextView
         android:id="@+id/tvIngredientFunction"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/ingredient_function"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppinsregular"
+        android:text="@string/ingredient_function"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/shapeView"
         app:layout_constraintStart_toStartOf="@+id/shapeView"
         app:layout_constraintTop_toTopOf="@+id/shapeView" />
 

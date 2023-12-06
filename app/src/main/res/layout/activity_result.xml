@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ResultActivity">
+    tools:context=".ui.result.ResultActivity">
 
     <ImageView
         android:id="@+id/resultImage"
@@ -26,7 +26,6 @@
         android:text="@string/product_name"
         android:textSize="22sp"
         android:fontFamily="@font/poppinsbold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultImage" />
 
@@ -54,12 +53,13 @@
         android:id="@+id/tvBpomStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="110dp"
         android:layout_marginTop="8dp"
-        android:text="@string/bpom_status"
-        android:textSize="12sp"
-        android:textColor="@color/grey"
         android:fontFamily="@font/poppinslight"
+        android:text="@string/bpom_status"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -67,8 +67,10 @@
         android:id="@+id/shapeView"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/rectangle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/tvBpomStatus" />
 
@@ -104,17 +106,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/ingredients"
+        android:text="@string/ingredient"
         android:textSize="16sp"
         android:fontFamily="@font/poppinsregular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNoBpomResult" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIngredienst"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
         android:background="@drawable/rectangle_primary10"
         tools:listitem="@layout/item_ingredients"
         app:layout_constraintBottom_toBottomOf="parent"
